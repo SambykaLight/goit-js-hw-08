@@ -1,7 +1,7 @@
 import throttle from 'lodash.throttle';
 
-const warehouse = 'feedback-form-state'
-const form = document.querySelector('.feedback-form')
+const warehouse = 'feedback-form-state';
+const form = document.querySelector('.feedback-form');
 
 form.addEventListener('input', throttle(onInputData, 500));
 form.addEventListener('submit', onFormSubmit);
