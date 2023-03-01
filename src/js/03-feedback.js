@@ -27,7 +27,7 @@ function onFormSubmit(event) {
   console.log({ email: email.value, message: message.value });
 
   if (email.value === '' || message.value === '') {
-    return alert(`Будь ласка, заповніть всі обов'язкові поля.`);
+    return alert(`Please fill in the required fields.`);
   }
 
   localStorage.removeItem(warehouse);
